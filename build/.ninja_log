@@ -1,0 +1,24 @@
+# ninja log v6
+33	10397	7688997677585736	FileCommander_autogen/timestamp	845c6f58910e5dfd
+33	10397	7688997677585736	FileCommander_autogen/mocs_compilation.cpp	845c6f58910e5dfd
+33	10397	7688997677585736	D:/CODE/FileCommander/build/FileCommander_autogen/timestamp	845c6f58910e5dfd
+33	10397	7688997677585736	D:/CODE/FileCommander/build/FileCommander_autogen/mocs_compilation.cpp	845c6f58910e5dfd
+10459	25234	7688997679745744	CMakeFiles/FileCommander.dir/src/TcpServer.cpp.obj	1725c53248fa562
+10441	28460	7688997679575741	CMakeFiles/FileCommander.dir/src/FileManager.cpp.obj	dd6a9cf74d4f5fe1
+10468	26278	7688997679845739	CMakeFiles/FileCommander.dir/src/TcpClient.cpp.obj	8064b0e7f4c50cbb
+10450	28916	7688997679655761	CMakeFiles/FileCommander.dir/src/NetworkManager.cpp.obj	989200054905a8f7
+32251	33720	7688997897675742	FileCommander.exe	aefd21e5b6423742
+10424	28981	7688997679405755	CMakeFiles/FileCommander.dir/src/main.cpp.obj	b8537222392e8cdb
+10417	30144	7688997679325915	CMakeFiles/FileCommander.dir/FileCommander_autogen/mocs_compilation.cpp.obj	fb0fe4bd8488118e
+10433	32250	7688997679485718	CMakeFiles/FileCommander.dir/src/MainWindow.cpp.obj	d2309545a24dcbd3
+65	2274	7689070428485638	FileCommander_autogen/timestamp	845c6f58910e5dfd
+65	2274	7689070428485638	FileCommander_autogen/mocs_compilation.cpp	845c6f58910e5dfd
+65	2274	7689070428485638	D:/CODE/FileCommander/build/FileCommander_autogen/timestamp	845c6f58910e5dfd
+65	2274	7689070428485638	D:/CODE/FileCommander/build/FileCommander_autogen/mocs_compilation.cpp	845c6f58910e5dfd
+2322	15112	7689070430305740	CMakeFiles/FileCommander.dir/src/TcpClient.cpp.obj	8064b0e7f4c50cbb
+2313	15518	7689070430215686	CMakeFiles/FileCommander.dir/src/TcpServer.cpp.obj	1725c53248fa562
+2285	17615	7689070429935771	CMakeFiles/FileCommander.dir/src/main.cpp.obj	b8537222392e8cdb
+2304	17843	7689070430125686	CMakeFiles/FileCommander.dir/src/NetworkManager.cpp.obj	989200054905a8f7
+2277	19022	7689070429845647	CMakeFiles/FileCommander.dir/FileCommander_autogen/mocs_compilation.cpp.obj	fb0fe4bd8488118e
+2294	20057	7689070430025663	CMakeFiles/FileCommander.dir/src/MainWindow.cpp.obj	d2309545a24dcbd3
+20057	21134	7689070607655706	FileCommander.exe	aefd21e5b6423742

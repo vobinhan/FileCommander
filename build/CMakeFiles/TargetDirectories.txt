@@ -1,0 +1,5 @@
+D:/CODE/FileCommander/build/CMakeFiles/FileCommander.dir
+D:/CODE/FileCommander/build/CMakeFiles/edit_cache.dir
+D:/CODE/FileCommander/build/CMakeFiles/rebuild_cache.dir
+D:/CODE/FileCommander/build/CMakeFiles/FileCommander_autogen_timestamp_deps.dir
+D:/CODE/FileCommander/build/CMakeFiles/FileCommander_autogen.dir
