@@ -39,51 +39,31 @@ namespace {
 struct qt_meta_stringdata_CLASSTcpClientENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSTcpClientENDCLASS = QtMocHelpers::stringData(
     "TcpClient",
-    "uploadProgress",
+    "readSocket",
     "",
-    "bytesSent",
-    "totalBytes",
-    "statusMessage",
-    "message",
-    "connected",
-    "disconnected"
+    "discardSocket"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSTcpClientENDCLASS_t {
-    uint offsetsAndSizes[18];
+    uint offsetsAndSizes[8];
     char stringdata0[10];
-    char stringdata1[15];
+    char stringdata1[11];
     char stringdata2[1];
-    char stringdata3[10];
-    char stringdata4[11];
-    char stringdata5[14];
-    char stringdata6[8];
-    char stringdata7[10];
-    char stringdata8[13];
+    char stringdata3[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSTcpClientENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSTcpClientENDCLASS_t qt_meta_stringdata_CLASSTcpClientENDCLASS = {
     {
         QT_MOC_LITERAL(0, 9),  // "TcpClient"
-        QT_MOC_LITERAL(10, 14),  // "uploadProgress"
-        QT_MOC_LITERAL(25, 0),  // ""
-        QT_MOC_LITERAL(26, 9),  // "bytesSent"
-        QT_MOC_LITERAL(36, 10),  // "totalBytes"
-        QT_MOC_LITERAL(47, 13),  // "statusMessage"
-        QT_MOC_LITERAL(61, 7),  // "message"
-        QT_MOC_LITERAL(69, 9),  // "connected"
-        QT_MOC_LITERAL(79, 12)   // "disconnected"
+        QT_MOC_LITERAL(10, 10),  // "readSocket"
+        QT_MOC_LITERAL(21, 0),  // ""
+        QT_MOC_LITERAL(22, 13)   // "discardSocket"
     },
     "TcpClient",
-    "uploadProgress",
+    "readSocket",
     "",
-    "bytesSent",
-    "totalBytes",
-    "statusMessage",
-    "message",
-    "connected",
-    "disconnected"
+    "discardSocket"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -95,22 +75,18 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTcpClientENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       0,       // signalCount
 
- // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   38,    2, 0x06,    1 /* Public */,
-       5,    1,   43,    2, 0x06,    4 /* Public */,
-       7,    0,   46,    2, 0x06,    6 /* Public */,
-       8,    0,   47,    2, 0x06,    7 /* Public */,
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   26,    2, 0x08,    1 /* Private */,
+       3,    0,   27,    2, 0x08,    2 /* Private */,
 
- // signals: parameters
-    QMetaType::Void, QMetaType::LongLong, QMetaType::LongLong,    3,    4,
-    QMetaType::Void, QMetaType::QString,    6,
+ // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
 
@@ -126,16 +102,9 @@ Q_CONSTINIT const QMetaObject TcpClient::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSTcpClientENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<TcpClient, std::true_type>,
-        // method 'uploadProgress'
+        // method 'readSocket'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
-        // method 'statusMessage'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'connected'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'disconnected'
+        // method 'discardSocket'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -147,43 +116,12 @@ void TcpClient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<TcpClient *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->uploadProgress((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<qint64>>(_a[2]))); break;
-        case 1: _t->statusMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->connected(); break;
-        case 3: _t->disconnected(); break;
+        case 0: _t->readSocket(); break;
+        case 1: _t->discardSocket(); break;
         default: ;
         }
-    } else if (_c == QMetaObject::IndexOfMethod) {
-        int *result = reinterpret_cast<int *>(_a[0]);
-        {
-            using _t = void (TcpClient::*)(qint64 , qint64 );
-            if (_t _q_method = &TcpClient::uploadProgress; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 0;
-                return;
-            }
-        }
-        {
-            using _t = void (TcpClient::*)(const QString & );
-            if (_t _q_method = &TcpClient::statusMessage; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 1;
-                return;
-            }
-        }
-        {
-            using _t = void (TcpClient::*)();
-            if (_t _q_method = &TcpClient::connected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 2;
-                return;
-            }
-        }
-        {
-            using _t = void (TcpClient::*)();
-            if (_t _q_method = &TcpClient::disconnected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 3;
-                return;
-            }
-        }
     }
+    (void)_a;
 }
 
 const QMetaObject *TcpClient::metaObject() const
@@ -205,40 +143,14 @@ int TcpClient::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 2;
     }
     return _id;
-}
-
-// SIGNAL 0
-void TcpClient::uploadProgress(qint64 _t1, qint64 _t2)
-{
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
-    QMetaObject::activate(this, &staticMetaObject, 0, _a);
-}
-
-// SIGNAL 1
-void TcpClient::statusMessage(const QString & _t1)
-{
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 1, _a);
-}
-
-// SIGNAL 2
-void TcpClient::connected()
-{
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
-}
-
-// SIGNAL 3
-void TcpClient::disconnected()
-{
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

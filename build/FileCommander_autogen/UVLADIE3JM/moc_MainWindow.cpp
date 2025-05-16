@@ -8,7 +8,6 @@
 
 #include "../../../src/MainWindow.h"
 #include <QtGui/qtextcursor.h>
-#include <QtNetwork/QSslError>
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -53,23 +52,16 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "onDeleteButtonClicked",
     "onNewFolderButtonClicked",
     "onRenameButtonClicked",
-    "onUploadButtonClicked",
-    "onDownloadButtonClicked",
     "onStartServerButtonClicked",
     "onConnectButtonClicked",
     "onTransferFileButtonClicked",
     "updateStatusBar",
     "message",
-    "isError",
-    "updateProgress",
-    "bytes",
-    "total",
-    "handleFileReceived",
-    "filePath"
+    "isError"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[52];
+    uint offsetsAndSizes[38];
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
@@ -83,19 +75,12 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata10[22];
     char stringdata11[25];
     char stringdata12[22];
-    char stringdata13[22];
-    char stringdata14[24];
-    char stringdata15[27];
-    char stringdata16[23];
-    char stringdata17[28];
-    char stringdata18[16];
-    char stringdata19[8];
-    char stringdata20[8];
-    char stringdata21[15];
-    char stringdata22[6];
-    char stringdata23[6];
-    char stringdata24[19];
-    char stringdata25[9];
+    char stringdata13[27];
+    char stringdata14[23];
+    char stringdata15[28];
+    char stringdata16[16];
+    char stringdata17[8];
+    char stringdata18[8];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -114,19 +99,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(156, 21),  // "onDeleteButtonClicked"
         QT_MOC_LITERAL(178, 24),  // "onNewFolderButtonClicked"
         QT_MOC_LITERAL(203, 21),  // "onRenameButtonClicked"
-        QT_MOC_LITERAL(225, 21),  // "onUploadButtonClicked"
-        QT_MOC_LITERAL(247, 23),  // "onDownloadButtonClicked"
-        QT_MOC_LITERAL(271, 26),  // "onStartServerButtonClicked"
-        QT_MOC_LITERAL(298, 22),  // "onConnectButtonClicked"
-        QT_MOC_LITERAL(321, 27),  // "onTransferFileButtonClicked"
-        QT_MOC_LITERAL(349, 15),  // "updateStatusBar"
-        QT_MOC_LITERAL(365, 7),  // "message"
-        QT_MOC_LITERAL(373, 7),  // "isError"
-        QT_MOC_LITERAL(381, 14),  // "updateProgress"
-        QT_MOC_LITERAL(396, 5),  // "bytes"
-        QT_MOC_LITERAL(402, 5),  // "total"
-        QT_MOC_LITERAL(408, 18),  // "handleFileReceived"
-        QT_MOC_LITERAL(427, 8)   // "filePath"
+        QT_MOC_LITERAL(225, 26),  // "onStartServerButtonClicked"
+        QT_MOC_LITERAL(252, 22),  // "onConnectButtonClicked"
+        QT_MOC_LITERAL(275, 27),  // "onTransferFileButtonClicked"
+        QT_MOC_LITERAL(303, 15),  // "updateStatusBar"
+        QT_MOC_LITERAL(319, 7),  // "message"
+        QT_MOC_LITERAL(327, 7)   // "isError"
     },
     "MainWindow",
     "onDriveComboLeftChanged",
@@ -141,19 +119,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "onDeleteButtonClicked",
     "onNewFolderButtonClicked",
     "onRenameButtonClicked",
-    "onUploadButtonClicked",
-    "onDownloadButtonClicked",
     "onStartServerButtonClicked",
     "onConnectButtonClicked",
     "onTransferFileButtonClicked",
     "updateStatusBar",
     "message",
-    "isError",
-    "updateProgress",
-    "bytes",
-    "total",
-    "handleFileReceived",
-    "filePath"
+    "isError"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -165,7 +136,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -173,23 +144,19 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,  116,    2, 0x08,    1 /* Private */,
-       4,    1,  119,    2, 0x08,    3 /* Private */,
-       5,    1,  122,    2, 0x08,    5 /* Private */,
-       7,    1,  125,    2, 0x08,    7 /* Private */,
-       8,    0,  128,    2, 0x08,    9 /* Private */,
-       9,    0,  129,    2, 0x08,   10 /* Private */,
-      10,    0,  130,    2, 0x08,   11 /* Private */,
-      11,    0,  131,    2, 0x08,   12 /* Private */,
-      12,    0,  132,    2, 0x08,   13 /* Private */,
-      13,    0,  133,    2, 0x08,   14 /* Private */,
-      14,    0,  134,    2, 0x08,   15 /* Private */,
-      15,    0,  135,    2, 0x08,   16 /* Private */,
-      16,    0,  136,    2, 0x08,   17 /* Private */,
-      17,    0,  137,    2, 0x08,   18 /* Private */,
-      18,    2,  138,    2, 0x08,   19 /* Private */,
-      21,    2,  143,    2, 0x08,   22 /* Private */,
-      24,    1,  148,    2, 0x08,   25 /* Private */,
+       1,    1,   92,    2, 0x08,    1 /* Private */,
+       4,    1,   95,    2, 0x08,    3 /* Private */,
+       5,    1,   98,    2, 0x08,    5 /* Private */,
+       7,    1,  101,    2, 0x08,    7 /* Private */,
+       8,    0,  104,    2, 0x08,    9 /* Private */,
+       9,    0,  105,    2, 0x08,   10 /* Private */,
+      10,    0,  106,    2, 0x08,   11 /* Private */,
+      11,    0,  107,    2, 0x08,   12 /* Private */,
+      12,    0,  108,    2, 0x08,   13 /* Private */,
+      13,    0,  109,    2, 0x08,   14 /* Private */,
+      14,    0,  110,    2, 0x08,   15 /* Private */,
+      15,    0,  111,    2, 0x08,   16 /* Private */,
+      16,    2,  112,    2, 0x08,   17 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -204,11 +171,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QString, QMetaType::Bool,   19,   20,
-    QMetaType::Void, QMetaType::LongLong, QMetaType::LongLong,   22,   23,
-    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString, QMetaType::Bool,   17,   18,
 
        0        // eod
 };
@@ -244,10 +207,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onRenameButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onUploadButtonClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onDownloadButtonClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onStartServerButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onConnectButtonClicked'
@@ -257,14 +216,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'updateStatusBar'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
-        // method 'updateProgress'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
-        // method 'handleFileReceived'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>
     >,
     nullptr
 } };
@@ -284,14 +236,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->onDeleteButtonClicked(); break;
         case 7: _t->onNewFolderButtonClicked(); break;
         case 8: _t->onRenameButtonClicked(); break;
-        case 9: _t->onUploadButtonClicked(); break;
-        case 10: _t->onDownloadButtonClicked(); break;
-        case 11: _t->onStartServerButtonClicked(); break;
-        case 12: _t->onConnectButtonClicked(); break;
-        case 13: _t->onTransferFileButtonClicked(); break;
-        case 14: _t->updateStatusBar((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
-        case 15: _t->updateProgress((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<qint64>>(_a[2]))); break;
-        case 16: _t->handleFileReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: _t->onStartServerButtonClicked(); break;
+        case 10: _t->onConnectButtonClicked(); break;
+        case 11: _t->onTransferFileButtonClicked(); break;
+        case 12: _t->updateStatusBar((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
         default: ;
         }
     }
@@ -316,13 +264,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 13)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 17;
+        _id -= 13;
     }
     return _id;
 }

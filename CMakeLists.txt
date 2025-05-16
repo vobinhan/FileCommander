@@ -4,21 +4,17 @@ project(FileCommander VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Tìm package Qt6
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Network)
 
-# Thiết lập tự động xử lý UI files
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOUIC_SEARCH_PATHS "${CMAKE_CURRENT_SOURCE_DIR}/ui")
 
 qt_standard_project_setup()
 
-# Thêm executable
 qt_add_executable(FileCommander
     src/main.cpp
     src/MainWindow.cpp
     src/FileManager.cpp
-    src/NetworkManager.cpp
     src/TcpServer.cpp
     src/TcpClient.cpp
 )

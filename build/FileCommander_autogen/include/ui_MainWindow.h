@@ -43,8 +43,7 @@ public:
     QPushButton *deleteButton;
     QPushButton *newFolderButton;
     QPushButton *renameButton;
-    QPushButton *uploadButton;
-    QPushButton *downloadButton;
+    QPushButton *transferFileButton;
     QSpacerItem *verticalSpacer;
     QGroupBox *rightPanel;
     QVBoxLayout *verticalLayout_4;
@@ -56,9 +55,8 @@ public:
     QLineEdit *serverAddressEdit;
     QLabel *label_2;
     QLineEdit *serverPortEdit;
-    QPushButton *connectButton;
     QPushButton *startServerButton;
-    QPushButton *transferFileButton;
+    QPushButton *connectButton;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -118,15 +116,10 @@ public:
 
         verticalLayout_3->addWidget(renameButton);
 
-        uploadButton = new QPushButton(centralwidget);
-        uploadButton->setObjectName("uploadButton");
+        transferFileButton = new QPushButton(centralwidget);
+        transferFileButton->setObjectName("transferFileButton");
 
-        verticalLayout_3->addWidget(uploadButton);
-
-        downloadButton = new QPushButton(centralwidget);
-        downloadButton->setObjectName("downloadButton");
-
-        verticalLayout_3->addWidget(downloadButton);
+        verticalLayout_3->addWidget(transferFileButton);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -181,20 +174,15 @@ public:
 
         horizontalLayout_2->addWidget(serverPortEdit);
 
-        connectButton = new QPushButton(networkGroup);
-        connectButton->setObjectName("connectButton");
-
-        horizontalLayout_2->addWidget(connectButton);
-
         startServerButton = new QPushButton(networkGroup);
         startServerButton->setObjectName("startServerButton");
 
         horizontalLayout_2->addWidget(startServerButton);
 
-        transferFileButton = new QPushButton(networkGroup);
-        transferFileButton->setObjectName("transferFileButton");
+        connectButton = new QPushButton(networkGroup);
+        connectButton->setObjectName("connectButton");
 
-        horizontalLayout_2->addWidget(transferFileButton);
+        horizontalLayout_2->addWidget(connectButton);
 
 
         verticalLayout->addWidget(networkGroup);
@@ -218,17 +206,15 @@ public:
         deleteButton->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         newFolderButton->setText(QCoreApplication::translate("MainWindow", "New Folder", nullptr));
         renameButton->setText(QCoreApplication::translate("MainWindow", "Rename", nullptr));
-        uploadButton->setText(QCoreApplication::translate("MainWindow", "Upload", nullptr));
-        downloadButton->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
+        transferFileButton->setText(QCoreApplication::translate("MainWindow", "Transfer File", nullptr));
         rightPanel->setTitle(QCoreApplication::translate("MainWindow", "Remote/Other Drive", nullptr));
-        networkGroup->setTitle(QCoreApplication::translate("MainWindow", "Network Transfer", nullptr));
+        networkGroup->setTitle(QString());
         label->setText(QCoreApplication::translate("MainWindow", "Server Address:", nullptr));
         serverAddressEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "127.0.0.1", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Port:", nullptr));
         serverPortEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "12345", nullptr));
-        connectButton->setText(QCoreApplication::translate("MainWindow", "Connect", nullptr));
         startServerButton->setText(QCoreApplication::translate("MainWindow", "Start Server", nullptr));
-        transferFileButton->setText(QCoreApplication::translate("MainWindow", "Transfer File", nullptr));
+        connectButton->setText(QCoreApplication::translate("MainWindow", "Connect", nullptr));
     } // retranslateUi
 
 };

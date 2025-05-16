@@ -322,17 +322,13 @@ D:/CODE/FileCommander/src/FileManager.h
  mdp:D:/CODE/FileCommander/src/FileManager.h
 D:/CODE/FileCommander/src/MainWindow.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QDebug
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QDir
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QFile
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QFlags
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QIODevice
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QList
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QMetaType
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QObject
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QSharedDataPointer
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QString
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QUrl
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QVariant
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QStandardPaths
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h
@@ -361,7 +357,6 @@ D:/CODE/FileCommander/src/MainWindow.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontainerinfo.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontainertools_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcryptographichash.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h
@@ -416,6 +411,7 @@ D:/CODE/FileCommander/src/MainWindow.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstandardpaths.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringbuilder.h
@@ -485,36 +481,26 @@ D:/CODE/FileCommander/src/MainWindow.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkAccessManager
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkReply
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkRequest
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QSslConfiguration
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpServer
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpSocket
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkaccessmanager.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkreply.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkrequest.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qssl.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslcertificate.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslconfiguration.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslerror.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h
- mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslsocket.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpserver.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QFileDialog
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QInputDialog
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qfiledialog.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qinputdialog.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h
@@ -703,7 +689,6 @@ D:/CODE/FileCommander/src/MainWindow.h
  mdp:D:/CODE/FileCommander/build/FileCommander_autogen/moc_predefs.h
  mdp:D:/CODE/FileCommander/src/FileManager.h
  mdp:D:/CODE/FileCommander/src/MainWindow.h
- mdp:D:/CODE/FileCommander/src/NetworkManager.h
  mdp:D:/CODE/FileCommander/src/TcpClient.h
  mdp:D:/CODE/FileCommander/src/TcpServer.h
 D:/CODE/FileCommander/src/NetworkManager.h
@@ -1036,7 +1021,11 @@ D:/CODE/FileCommander/src/NetworkManager.h
  mdp:D:/CODE/FileCommander/src/NetworkManager.h
 D:/CODE/FileCommander/src/TcpClient.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QDebug
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QFile
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QList
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QMetaType
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QStandardPaths
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qalgorithms.h
@@ -1053,6 +1042,7 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h
@@ -1065,10 +1055,13 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdir.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfile.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfiledevice.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfileinfo.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qflags.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfloat16.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qforeach.h
@@ -1082,10 +1075,13 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiodevicebase.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiterable.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiterator.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qline.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlist.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlocale.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlogging.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmalloc.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmetacontainer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmetatype.h
@@ -1098,7 +1094,9 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qrect.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qrefcount.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qscopeguard.h
@@ -1107,6 +1105,8 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qshareddata_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer_impl.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstandardpaths.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringbuilder.h
@@ -1138,18 +1138,59 @@ D:/CODE/FileCommander/src/TcpClient.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtversionchecks.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtypeinfo.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtypes.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qurl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qutf8stringview.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qvariant.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qaction.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qbitmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qbrush.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qcolor.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qcursor.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfont.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfontinfo.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfontmetrics.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qicon.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qimage.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qkeysequence.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpaintdevice.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpixelformat.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpixmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpolygon.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qregion.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qrgb.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtgui-config.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtguiexports.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtguiglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtransform.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpServer
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpSocket
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpserver.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QFileDialog
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qfiledialog.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qwidget.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic
@@ -1337,7 +1378,11 @@ D:/CODE/FileCommander/src/MainWindow.cpp
 D:/CODE/FileCommander/src/NetworkManager.cpp
 D:/CODE/FileCommander/src/TcpServer.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QDebug
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QFile
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QList
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QMetaType
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/QStandardPaths
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qalgorithms.h
@@ -1354,6 +1399,7 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h
@@ -1366,10 +1412,13 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qdir.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfile.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfiledevice.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfileinfo.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qflags.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qfloat16.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qforeach.h
@@ -1383,10 +1432,13 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiodevicebase.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiterable.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qiterator.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qline.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlist.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlocale.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qlogging.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmalloc.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmetacontainer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qmetatype.h
@@ -1399,7 +1451,9 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qrect.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qrefcount.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qscopeguard.h
@@ -1408,6 +1462,8 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qshareddata_impl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer_impl.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstandardpaths.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringalgorithms.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qstringbuilder.h
@@ -1439,11 +1495,37 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtversionchecks.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtypeinfo.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qtypes.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qurl.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qutf8stringview.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qvariant.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qaction.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qbitmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qbrush.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qcolor.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qcursor.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfont.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfontinfo.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qfontmetrics.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qicon.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qimage.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qkeysequence.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpaintdevice.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpixelformat.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpixmap.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qpolygon.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qregion.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qrgb.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtgui-config.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtguiexports.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtguiglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qtransform.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpServer
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpSocket
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h
@@ -1453,6 +1535,19 @@ D:/CODE/FileCommander/src/TcpServer.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QFileDialog
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qfiledialog.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h
+ mdp:C:/Qt/6.5.3/mingw_64/include/QtWidgets/qwidget.h
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array
  mdp:C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic

@@ -85,15 +85,6 @@ build CMakeFiles/FileCommander.dir/src/FileManager.cpp.obj: CXX_COMPILER__FileCo
   OBJECT_DIR = CMakeFiles\FileCommander.dir
   OBJECT_FILE_DIR = CMakeFiles\FileCommander.dir\src
 
-build CMakeFiles/FileCommander.dir/src/NetworkManager.cpp.obj: CXX_COMPILER__FileCommander_unscanned_Debug D$:/CODE/FileCommander/src/NetworkManager.cpp || cmake_object_order_depends_target_FileCommander
-  CONFIG = Debug
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\FileCommander.dir\src\NetworkManager.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17
-  INCLUDES = -ID:/CODE/FileCommander/build/FileCommander_autogen/include -ID:/CODE/FileCommander/src -ID:/CODE/FileCommander/ui -isystem C:/Qt/6.5.3/mingw_64/include/QtCore -isystem C:/Qt/6.5.3/mingw_64/include -isystem C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.5.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.5.3/mingw_64/include/QtGui -isystem C:/Qt/6.5.3/mingw_64/include/QtNetwork
-  OBJECT_DIR = CMakeFiles\FileCommander.dir
-  OBJECT_FILE_DIR = CMakeFiles\FileCommander.dir\src
-
 build CMakeFiles/FileCommander.dir/src/TcpServer.cpp.obj: CXX_COMPILER__FileCommander_unscanned_Debug D$:/CODE/FileCommander/src/TcpServer.cpp || cmake_object_order_depends_target_FileCommander
   CONFIG = Debug
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -120,7 +111,7 @@ build CMakeFiles/FileCommander.dir/src/TcpClient.cpp.obj: CXX_COMPILER__FileComm
 #############################################
 # Link the executable FileCommander.exe
 
-build FileCommander.exe: CXX_EXECUTABLE_LINKER__FileCommander_Debug CMakeFiles/FileCommander.dir/FileCommander_autogen/mocs_compilation.cpp.obj CMakeFiles/FileCommander.dir/src/main.cpp.obj CMakeFiles/FileCommander.dir/src/MainWindow.cpp.obj CMakeFiles/FileCommander.dir/src/FileManager.cpp.obj CMakeFiles/FileCommander.dir/src/NetworkManager.cpp.obj CMakeFiles/FileCommander.dir/src/TcpServer.cpp.obj CMakeFiles/FileCommander.dir/src/TcpClient.cpp.obj | C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Network.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core.a || FileCommander_autogen FileCommander_autogen_timestamp_deps
+build FileCommander.exe: CXX_EXECUTABLE_LINKER__FileCommander_Debug CMakeFiles/FileCommander.dir/FileCommander_autogen/mocs_compilation.cpp.obj CMakeFiles/FileCommander.dir/src/main.cpp.obj CMakeFiles/FileCommander.dir/src/MainWindow.cpp.obj CMakeFiles/FileCommander.dir/src/FileManager.cpp.obj CMakeFiles/FileCommander.dir/src/TcpServer.cpp.obj CMakeFiles/FileCommander.dir/src/TcpClient.cpp.obj | C$:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Network.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.3/mingw_64/lib/libQt6Core.a || FileCommander_autogen FileCommander_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.5.3/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.5.3/mingw_64/lib/libQt6Network.a  C:/Qt/6.5.3/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  C:/Qt/6.5.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

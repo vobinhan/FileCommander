@@ -1,54 +1,129 @@
 #include "TcpServer.h"
-#include <QDir>
+#include <QProgressBar>
+#include <QStatusBar>
 
-TcpServer::TcpServer(QObject *parent) : QObject(parent), 
-    m_server(new QTcpServer(this)), 
-    m_clientSocket(nullptr) {}
-
-bool TcpServer::startServer(quint16 port) {
-    if (m_server->isListening()) {
-        emit statusMessage("Server already running");
-        return false;
-    }
-
-    QDir().mkpath(m_saveDir);
+TcpServer::TcpServer(QObject *parent) : QObject(parent),
+    Tcp_Server(new QTcpServer(this))
+{
     
-    if (!m_server->listen(QHostAddress::Any, port)) {
-        emit statusMessage("Server error: " + m_server->errorString());
-        return false;
-    }
-    
-    connect(m_server, &QTcpServer::newConnection, this, &TcpServer::handleNewConnection);
-    emit statusMessage(QString("Server started on port %1").arg(port));
-    return true;
 }
 
-void TcpServer::handleNewConnection() {
-    m_clientSocket = m_server->nextPendingConnection();
-    connect(m_clientSocket, &QTcpSocket::readyRead, this, &TcpServer::readSocketData);
-    connect(m_clientSocket, &QTcpSocket::disconnected, m_clientSocket, &QTcpSocket::deleteLater);
-    emit statusMessage("Client connected");
+bool TcpServer::startServer(quint16 port) 
+{
+    Tcp_Server = new QTcpServer(); // Init server object
+    if(Tcp_Server->listen(QHostAddress::AnyIPv4, port))
+    {
+        connect(Tcp_Server, &QTcpServer::newConnection, this, &TcpServer::newConnection);
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
-void TcpServer::readSocketData() {
-    if (!m_receivedFile.isOpen()) {
-        QString filePath = m_saveDir + QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss");
-        m_receivedFile.setFileName(filePath);
-        if (!m_receivedFile.open(QIODevice::WriteOnly)) {
-            emit statusMessage("Cannot open file for writing");
-            return;
+void TcpServer::newConnection() 
+{
+    while (Tcp_Server->hasPendingConnections())
+        // Add new comming TCP Client in Server
+        AddToSocketList(Tcp_Server->nextPendingConnection());
+}
+
+void TcpServer::AddToSocketList(QTcpSocket *socket)
+{
+    connect(socket, &QTcpSocket::readyRead, this, &TcpServer::readSocket);
+    connect(socket, &QTcpSocket::disconnected, this, &TcpServer::discardSocket);
+}  
+
+void TcpServer::readSocket()
+{
+    QTcpSocket* socket = reinterpret_cast<QTcpSocket*>(sender());
+
+    QByteArray buffer;
+
+    QDataStream socketStream(socket);
+    socketStream.setVersion(QDataStream::Qt_6_0);
+
+    socketStream.startTransaction();
+    socketStream >> buffer; // get data on socket stream or from client socket
+
+    if(!socketStream.commitTransaction())
+    {
+        return;
+    }
+
+    QString header = buffer.mid(0,128); // extect header data
+
+    
+
+    QString fileName = header.split(",")[0].split(":")[1];
+    QString fileExt = fileName.split(".")[1];
+    QString fileSize = header.split(",")[1].split(":")[1];
+
+
+
+    buffer = buffer.mid(128);
+
+    QString SaveFilePath = QFileDialog::getExistingDirectory(nullptr, "Chose folder save file");
+    if (SaveFilePath.isEmpty()) return;
+    QString filePath = QDir(SaveFilePath).filePath(fileName);
+
+    QFile file(filePath);
+    if(file.open(QIODevice::WriteOnly)){
+        file.write(buffer);
+
+        file.close();
+    }
+
+}
+
+void TcpServer::discardSocket()
+{
+    // Remove client form list when client is disconnected 
+    QTcpSocket* socket = reinterpret_cast<QTcpSocket*>(sender());
+        
+    socket->deleteLater();
+}
+
+void TcpServer::sendFile(const QString &filePath)
+{
+    if(TcpSocket)
+    {
+        if(TcpSocket->isOpen())
+        {
+            QFile filedata(filePath);
+            if(filedata.open(QIODevice::ReadOnly))
+            {
+                QFileInfo fileinfo(filedata);
+                QString FileNameWithExt(fileinfo.fileName());
+
+                QDataStream socketstream(TcpSocket);
+                socketstream.setVersion(QDataStream::Qt_6_0);
+
+                // this code use send file name also with data
+                QByteArray header;
+                header.prepend("file name: " + FileNameWithExt.toUtf8() + ", file size: " + QString::number(filedata.size()).toUtf8()); // .toUtf8()
+                header.resize(128);
+
+                // Now lets add file data
+                QByteArray ByteFileData = filedata.readAll();
+                ByteFileData.prepend(header);
+
+                // Write in socket
+                socketstream << ByteFileData;
+            }
+            else
+            {
+                qDebug() << "File not open!";
+            }
+        }
+        else
+        {
+            qDebug() << "Client socket not open!";
         }
     }
-
-    m_receivedFile.write(m_clientSocket->readAll());
-    
-    if (m_clientSocket->atEnd()) {
-        m_receivedFile.close();
-        emit fileReceived(m_receivedFile.fileName());
+    else
+    {
+        qDebug() << "Client socket is invalid!";
     }
-}
-
-void TcpServer::stopServer() {
-    if (m_receivedFile.isOpen()) m_receivedFile.close();
-    m_server->close();
 }

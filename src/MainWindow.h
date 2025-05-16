@@ -5,7 +5,6 @@
 #include <QFileSystemModel>
 #include <QInputDialog>
 #include "FileManager.h"
-#include "NetworkManager.h"
 #include "TcpClient.h"
 #include "TcpServer.h"
 
@@ -32,30 +31,25 @@ private slots:
     void onNewFolderButtonClicked();
     void onRenameButtonClicked();
 
-    void onUploadButtonClicked(); //
-    void onDownloadButtonClicked(); // 
-    void onStartServerButtonClicked(); //
-
+    void onStartServerButtonClicked(); // 
     void onConnectButtonClicked();
     void onTransferFileButtonClicked();
     
-    void updateStatusBar(const QString &message, bool isError); // show
-    void updateProgress(qint64 bytes, qint64 total); //
-
-    void handleFileReceived(const QString &filePath);
+    void updateStatusBar(const QString &message, bool isError);
 
 private:
     Ui::MainWindow *ui;
     FileManager *m_fileManager;
-    NetworkManager *m_networkManager;
     QFileSystemModel *m_leftModel;
     QFileSystemModel *m_rightModel;
     QString m_currentLeftPath;
     QString m_currentRightPath;
 
+    TcpServer *Tcp_Server;
+    TcpClient *Tcp_Client;
+
     void setupUI();
     void setupConnections();
-    void updateCurrentPaths();
     QString getSelectedPath(bool isLeftPanel) const;
 };
 

@@ -1,9 +1,16 @@
 #ifndef TCPSERVER_H
 #define TCPSERVER_H
 
+#include <QMainWindow>
+#include <QDebug>
+#include <QFile>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMetaType>
+#include <QList>
+#include <QStandardPaths>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include <QFile>
 
 class TcpServer : public QObject
 {
@@ -11,21 +18,19 @@ class TcpServer : public QObject
 public:
     explicit TcpServer(QObject *parent = nullptr);
     bool startServer(quint16 port);
-    void stopServer();
-
+    void sendFile(const QString &filePath);
 signals:
-    void fileReceived(const QString &filePath);
-    void statusMessage(const QString &message);
 
 private slots:
-    void handleNewConnection();
-    void readSocketData();
+    void readSocket(); //
+    void discardSocket(); //
+    void newConnection(); // 
+    void AddToSocketList(QTcpSocket *socket); //
 
 private:
-    QTcpServer *m_server;
-    QTcpSocket *m_clientSocket;
-    QFile m_receivedFile;
-    QString m_saveDir = "C:/FileCommander/Downloads/";
+    QTcpServer *Tcp_Server; // 
+    QTcpSocket *TcpSocket;
+    
 };
 
 #endif // TCPSERVER_H

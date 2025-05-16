@@ -1,16 +1,12 @@
 D:/CODE/FileCommander/build/FileCommander_autogen/UVLADIE3JM/moc_MainWindow.cpp: D:/CODE/FileCommander/src/MainWindow.h \
   D:/CODE/FileCommander/build/FileCommander_autogen/moc_predefs.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QDir \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QFile \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QFlags \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QList \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QMetaType \
   C:/Qt/6.5.3/mingw_64/include/QtCore/QObject \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QSharedDataPointer \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QString \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QUrl \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/QVariant \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QStandardPaths \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qabstractitemmodel.h \
@@ -39,7 +35,6 @@ D:/CODE/FileCommander/build/FileCommander_autogen/UVLADIE3JM/moc_MainWindow.cpp:
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h \
-  C:/Qt/6.5.3/mingw_64/include/QtCore/qcryptographichash.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
@@ -94,6 +89,7 @@ D:/CODE/FileCommander/build/FileCommander_autogen/UVLADIE3JM/moc_MainWindow.cpp:
   C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qsharedpointer_impl.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qsize.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/qstandardpaths.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qstringalgorithms.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qstringbuilder.h \
@@ -163,36 +159,26 @@ D:/CODE/FileCommander/build/FileCommander_autogen/UVLADIE3JM/moc_MainWindow.cpp:
   C:/Qt/6.5.3/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkAccessManager \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkReply \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/QNetworkRequest \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/QSslConfiguration \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpServer \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/QTcpSocket \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qhostaddress.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkreply.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qnetworkrequest.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qssl.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslcertificate.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslconfiguration.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslerror.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
-  C:/Qt/6.5.3/mingw_64/include/QtNetwork/qsslsocket.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpserver.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtcpsocket.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.5.3/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QInputDialog \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qinputdialog.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -379,6 +365,5 @@ D:/CODE/FileCommander/build/FileCommander_autogen/UVLADIE3JM/moc_MainWindow.cpp:
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   D:/CODE/FileCommander/src/FileManager.h \
-  D:/CODE/FileCommander/src/NetworkManager.h \
   D:/CODE/FileCommander/src/TcpClient.h \
   D:/CODE/FileCommander/src/TcpServer.h

@@ -8,7 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , m_fileManager(new FileManager(this))
-    , m_networkManager(new NetworkManager(this))
+    , Tcp_Server(new TcpServer(this))
+    , Tcp_Client(new TcpClient(this))
 {
     ui->setupUi(this);
     setupUI();
@@ -69,21 +70,13 @@ void MainWindow::setupConnections()
     connect(ui->deleteButton, &QPushButton::clicked, this, &MainWindow::onDeleteButtonClicked);
     connect(ui->newFolderButton, &QPushButton::clicked, this, &MainWindow::onNewFolderButtonClicked);
     connect(ui->renameButton, &QPushButton::clicked, this, &MainWindow::onRenameButtonClicked);
-    connect(ui->uploadButton, &QPushButton::clicked, this, &MainWindow::onUploadButtonClicked);
-    connect(ui->downloadButton, &QPushButton::clicked, this, &MainWindow::onDownloadButtonClicked);
     connect(ui->connectButton, &QPushButton::clicked, this, &MainWindow::onConnectButtonClicked);
     connect(ui->startServerButton, &QPushButton::clicked, this, &MainWindow::onStartServerButtonClicked);
     connect(ui->transferFileButton, &QPushButton::clicked, this, &MainWindow::onTransferFileButtonClicked);
     
     // Signals from managers
     connect(m_fileManager, &FileManager::operationStatus, this, &MainWindow::updateStatusBar);
-    connect(m_networkManager, &NetworkManager::networkStatus, this, &MainWindow::updateStatusBar);
-    connect(m_networkManager, &NetworkManager::uploadProgress, this, &MainWindow::updateProgress);
-    connect(m_networkManager, &NetworkManager::downloadProgress, this, &MainWindow::updateProgress);
-    connect(m_networkManager, &NetworkManager::fileReceived, this, &MainWindow::handleFileReceived);
 }
-
-// Implement other slot functions...
 
 void MainWindow::onDriveComboLeftChanged(int index)
 {
@@ -178,57 +171,55 @@ void MainWindow::onRenameButtonClicked()
     }
 }
 
-void MainWindow::onUploadButtonClicked()
+void MainWindow::onStartServerButtonClicked()
 {
-    QString filePath = getSelectedPath(true); // Left panel
-    
-    if (filePath.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please select a file to upload");
-        return;
-    }
-    
-    QUrl url(QString("ftp://example.com/uploads/%1").arg(QFileInfo(filePath).fileName()));
-    m_networkManager->uploadFile(url, filePath);
-}
+    quint16 port = ui->serverPortEdit->text().toUShort();
 
-void MainWindow::onDownloadButtonClicked()
-{
-    QString filePath = getSelectedPath(false); // Right panel
-    QString destination = m_currentLeftPath;
-    
-    if (filePath.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please select a file to download");
-        return;
+    if(Tcp_Server->startServer(port))
+    {
+        ui->statusbar->showMessage("TCP Server Started");
+        ui->statusbar->setStyleSheet("color: green;");
     }
-    
-    QUrl url(QString("ftp://example.com/downloads/%1").arg(QFileInfo(filePath).fileName()));
-    m_networkManager->downloadFile(url, destination + QDir::separator() + QFileInfo(filePath).fileName());
+    else
+    {
+        ui->statusbar->showMessage("TCP Server not Started");
+        ui->statusbar->setStyleSheet("color: red;");
+    }
 }
 
 void MainWindow::onConnectButtonClicked()
 {
     QString host = ui->serverAddressEdit->text();
     quint16 port = ui->serverPortEdit->text().toUShort();
-    m_networkManager->connectToServer(host, port);
-}
-
-void MainWindow::onStartServerButtonClicked()
-{
-    quint16 port = ui->serverPortEdit->text().toUShort();
-    m_networkManager->startServer(port);
+    if(Tcp_Client->connectToServer(host, port))
+    {
+        ui->statusbar->showMessage("Client is connected");
+        ui->statusbar->setStyleSheet("color: green;");
+    }
+    else
+    {
+        ui->statusbar->showMessage("Client is not connected");
+        ui->statusbar->setStyleSheet("color: red;");
+    }
 }
 
 void MainWindow::onTransferFileButtonClicked()
 {
-    QString filePath = getSelectedPath(ui->leftView->hasFocus());
-    
-    if (filePath.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please select a file to transfer");
-        return;
+    QString source = getSelectedPath(true); // Left panel
+    QString destination = m_currentRightPath;
+
+    if(Tcp_Client->sendFile(source))
+    {
+        ui->statusbar->showMessage("Send File is Successful");
+        ui->statusbar->setStyleSheet("color: green;");
     }
-    
-    m_networkManager->sendFileOverTcp(filePath);
+    else
+    {
+        ui->statusbar->showMessage("Send File is Unsuccessful");
+        ui->statusbar->setStyleSheet("color: red;");
+    }
 }
+
 
 void MainWindow::updateStatusBar(const QString &message, bool isError)
 {
@@ -236,20 +227,6 @@ void MainWindow::updateStatusBar(const QString &message, bool isError)
     if (isError) {
         QMessageBox::warning(this, "Error", message);
     }
-}
-
-void MainWindow::updateProgress(qint64 bytes, qint64 total)
-{
-    QProgressBar *progressBar = findChild<QProgressBar*>();
-    if (progressBar) {
-        progressBar->setMaximum(total);
-        progressBar->setValue(bytes);
-    }
-}
-
-void MainWindow::handleFileReceived(const QString &filePath)
-{
-    QMessageBox::information(this, "File Received", QString("File received: %1").arg(filePath));
 }
 
 QString MainWindow::getSelectedPath(bool isLeftPanel) const

@@ -1,27 +1,32 @@
 #ifndef TCPCLIENT_H
 #define TCPCLIENT_H
 
-#include <QTcpSocket>
+#include <QMainWindow>
+#include <QDebug>
 #include <QFile>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMetaType>
+#include <QList>
+#include <QStandardPaths>
+#include <QTcpServer>
+#include <QTcpSocket>
 
 class TcpClient : public QObject
 {
     Q_OBJECT
 public:
     explicit TcpClient(QObject *parent = nullptr);
-    void connectToServer(const QString &host, quint16 port);
-    void sendFile(const QString &filePath);
-    void disconnectFromHost();
+    bool connectToServer(const QString &host, quint16 port);
+    // void sendFile(const QString &filePath);
+    bool sendFile(QString &filePath);
 
-signals:
-    void uploadProgress(qint64 bytesSent, qint64 totalBytes);
-    void statusMessage(const QString &message);
-    void connected();
-    void disconnected();
+private slots:
+    void readSocket();
+    void discardSocket();
 
 private:
-    QTcpSocket *m_socket;
-    qint64 m_fileSize;
+    QTcpSocket *TcpSocket;
 };
 
 #endif // TCPCLIENT_H

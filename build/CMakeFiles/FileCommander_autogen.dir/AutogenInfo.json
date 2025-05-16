@@ -271,12 +271,6 @@
 			null
 		],
 		[
-			"D:/CODE/FileCommander/src/NetworkManager.h",
-			"MU",
-			"UVLADIE3JM/moc_NetworkManager.cpp",
-			null
-		],
-		[
 			"D:/CODE/FileCommander/src/TcpClient.h",
 			"MU",
 			"UVLADIE3JM/moc_TcpClient.cpp",
@@ -364,7 +358,6 @@
 	[
 		[ "D:/CODE/FileCommander/src/FileManager.cpp", "MU", null ],
 		[ "D:/CODE/FileCommander/src/MainWindow.cpp", "MU", null ],
-		[ "D:/CODE/FileCommander/src/NetworkManager.cpp", "MU", null ],
 		[ "D:/CODE/FileCommander/src/TcpClient.cpp", "MU", null ],
 		[ "D:/CODE/FileCommander/src/TcpServer.cpp", "MU", null ],
 		[ "D:/CODE/FileCommander/src/main.cpp", "MU", null ]
